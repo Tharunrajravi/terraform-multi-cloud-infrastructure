@@ -93,8 +93,10 @@ Backend --> DynamoDB["DynamoDB Lock Table"]
 ├── providers.tf
 ├── variables.tf
 ├── versions.tf
+├── terraform.tfvars.example
 └── README.md
 ```
+
 
 
 ---
