@@ -29,6 +29,18 @@ jobs:
         with:
           terraform_version: 1.12.2
 
+      - name: Setup TFLint
+        uses: terraform-linters/setup-tflint@v4
+
+      - name: Show TFLint Version
+        run: tflint --version
+
+      - name: Initialize TFLint
+        run: tflint --init
+
+      - name: Run TFLint
+        run: tflint
+
       - name: Check Terraform Formatting
         run: terraform fmt -check -recursive
 
